@@ -214,6 +214,18 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Action Buttons */}
+          <div className="flex gap-3 mb-4">
+            <Button onClick={() => setShowAddModal(true)} className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-6 py-3">
+              <Plus className="w-5 h-5 mr-2" />
+              Adicionar Jogador
+            </Button>
+            <Button onClick={handleExportCSV} className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold text-lg px-6 py-3">
+              <Download className="w-5 h-5 mr-2" />
+              Exportar CSV
+            </Button>
+          </div>
+
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
             <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
@@ -317,15 +329,7 @@ export default function Home() {
               Limpar
             </Button>
 
-            <Button onClick={() => setShowAddModal(true)} className="bg-green-600 hover:bg-green-700 text-white font-bold">
-              <Plus className="w-4 h-4 mr-2" />
-              Adicionar Jogador
-            </Button>
 
-            <Button onClick={handleExportCSV} className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold">
-              <Download className="w-4 h-4 mr-2" />
-              Exportar CSV
-            </Button>
           </div>
 
           <div className="text-sm text-slate-400 px-4 pt-4">
