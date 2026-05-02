@@ -34,7 +34,7 @@ export default function Home() {
     }
     return jogadoresData;
   });
-  const [filtrados, setFiltrados] = useState<Jogador[]>(jogadoresData);
+  const [filtrados, setFiltrados] = useState<Jogador[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterAno, setFilterAno] = useState("");
   const [filterMinJogos, setFilterMinJogos] = useState("0");
