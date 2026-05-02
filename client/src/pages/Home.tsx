@@ -1,11 +1,13 @@
-import { useEffect, useState, useMemo } from "react";
+'use client';
+
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from "recharts";
-import { Download, Filter, RotateCcw } from "lucide-react";
+import { Download, Filter, RotateCcw, Plus } from "lucide-react";
 import jogadoresData from "@/data/jogadores-completo.json";
 
 interface Jogador {
@@ -30,6 +32,8 @@ export default function Home() {
   const [selectedJogador, setSelectedJogador] = useState<Jogador | null>(null);
   const [editingCell, setEditingCell] = useState<{ nome: string; field: 'total_jogos' | 'total_gols' } | null>(null);
   const [editValue, setEditValue] = useState("");
+  const [showAddModal, setShowAddModal] = useState(false);
+  const [newJogador, setNewJogador] = useState({ nome: "", total_jogos: 0, total_gols: 0 });
 
   // Aplicar filtros
   useEffect(() => {
@@ -51,56 +55,31 @@ export default function Home() {
       let aVal: any = a[sortBy as keyof Jogador];
       let bVal: any = b[sortBy as keyof Jogador];
 
-      if (sortBy === "media_gols") {
-        aVal = a.total_jogos > 0 ? a.total_gols / a.total_jogos : 0;
-        bVal = b.total_jogos > 0 ? b.total_gols / b.total_jogos : 0;
+      if (sortBy === "total_jogos" || sortBy === "total_gols") {
+        aVal = aVal as number;
+        bVal = bVal as number;
       }
 
-      if (typeof aVal === "string") {
-        return sortDir === "asc" ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+      if (typeof aVal === "number" && typeof bVal === "number") {
+        return sortDir === "desc" ? bVal - aVal : aVal - bVal;
       }
-      return sortDir === "asc" ? aVal - bVal : bVal - aVal;
+      return 0;
     });
 
     setFiltrados(result);
     setCurrentPage(1);
-  }, [searchTerm, filterAno, filterMinJogos, sortBy, sortDir, jogadores]);
-
-  const totalStats = useMemo(() => ({
-    totalJogadores: jogadores.length,
-    totalJogos: jogadores.reduce((s, j) => s + j.total_jogos, 0),
-    totalGols: jogadores.reduce((s, j) => s + j.total_gols, 0),
-    topJogador: jogadores[0],
-    topArtilheiro: [...jogadores].sort((a, b) => b.total_gols - a.total_gols)[0],
-  }), [jogadores]);
-
-  const paginatedData = useMemo(() => {
-    const start = (currentPage - 1) * itemsPerPage;
-    return filtrados.slice(start, start + itemsPerPage);
-  }, [filtrados, currentPage, itemsPerPage]);
-
-  const totalPages = Math.ceil(filtrados.length / itemsPerPage);
-
-  const top10Jogos = useMemo(() => 
-    [...jogadores].sort((a, b) => b.total_jogos - a.total_jogos).slice(0, 10),
-    [jogadores]
-  );
-
-  const top10Gols = useMemo(() => 
-    [...jogadores].sort((a, b) => b.total_gols - a.total_gols).slice(0, 10),
-    [jogadores]
-  );
+  }, [jogadores, searchTerm, filterAno, filterMinJogos, sortBy, sortDir]);
 
   const handleSort = (field: string) => {
     if (sortBy === field) {
-      setSortDir(sortDir === "asc" ? "desc" : "asc");
+      setSortDir(sortDir === "desc" ? "asc" : "desc");
     } else {
       setSortBy(field);
-      setSortDir(field === "nome" ? "asc" : "desc");
+      setSortDir("desc");
     }
   };
 
-  const handleReset = () => {
+  const handleClear = () => {
     setSearchTerm("");
     setFilterAno("");
     setFilterMinJogos("0");
@@ -160,172 +139,191 @@ export default function Home() {
     setEditValue("");
   };
 
+  const handleAddJogador = () => {
+    if (!newJogador.nome.trim()) {
+      alert("Por favor, insira o nome do jogador");
+      return;
+    }
+
+    const novoJogador: Jogador = {
+      nome: newJogador.nome.trim(),
+      total_jogos: newJogador.total_jogos,
+      total_gols: newJogador.total_gols,
+      jogos_por_ano: {},
+      gols_por_ano: {},
+      anos_atuou: [],
+    };
+
+    setJogadores([...jogadores, novoJogador]);
+    setNewJogador({ nome: "", total_jogos: 0, total_gols: 0 });
+    setShowAddModal(false);
+  };
+
+  const totalJogos = jogadores.reduce((sum, j) => sum + j.total_jogos, 0);
+  const totalGols = jogadores.reduce((sum, j) => sum + j.total_gols, 0);
+  const totalPages = Math.ceil(filtrados.length / itemsPerPage);
+  const paginatedJogadores = filtrados.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const top10Jogos = [...jogadores].sort((a, b) => b.total_jogos - a.total_jogos).slice(0, 10);
+  const top10Gols = [...jogadores].sort((a, b) => b.total_gols - a.total_gols).slice(0, 10);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
       {/* Header */}
-      <header className="border-b border-amber-900/30 bg-black/40 backdrop-blur-sm sticky top-0 z-40">
+      <header className="bg-gradient-to-r from-slate-950 to-slate-900 border-b border-slate-800 sticky top-0 z-40">
         <div className="container py-6">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center flex-shrink-0 shadow-lg">
-              <span className="text-xl font-black text-black">SC</span>
+          <div className="flex items-center gap-4 mb-4">
+            <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center font-bold text-slate-900 text-lg">SC</div>
+            <div>
+              <h1 className="text-3xl font-black text-amber-400">HISTÓRICO CORINTHIANS</h1>
+              <p className="text-sm text-slate-400">Jogadores que vestiram a camisa — 2015 a 2026 · Fonte: meutimao.com.br</p>
             </div>
-            <div className="flex-1">
-              <h1 className="text-3xl font-black text-amber-400 tracking-tight">HISTÓRICO CORINTHIANS</h1>
-              <p className="text-sm text-slate-400 mt-1">Jogadores que vestiram a camisa — 2015 a 2026 · Fonte: meutimao.com.br</p>
+            <div className="ml-auto text-right">
+              <span className="text-xs text-slate-500 uppercase">Período</span>
+              <div className="text-amber-400 font-bold text-lg">2015–2026</div>
             </div>
-            <div className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20">
-              <span className="text-xs font-bold text-amber-400 uppercase tracking-wider">2015–2026</span>
-            </div>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-2xl font-black text-amber-400">{jogadores.length}</div>
+              <div className="text-xs text-slate-400 uppercase">Jogadores Únicos</div>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-2xl font-black text-amber-400">{totalJogos.toLocaleString()}</div>
+              <div className="text-xs text-slate-400 uppercase">Total de Jogos</div>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-2xl font-black text-red-400">{totalGols.toLocaleString()}</div>
+              <div className="text-xs text-slate-400 uppercase">Total de Gols</div>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-2xl font-black text-cyan-400">12</div>
+              <div className="text-xs text-slate-400 uppercase">Temporadas</div>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-sm text-slate-300">{top10Jogos[0]?.nome}</div>
+              <div className="text-amber-400 font-bold">Mais jogos: {top10Jogos[0]?.total_jogos}</div>
+            </Card>
+            <Card className="bg-slate-800/50 border-slate-700 p-3 text-center">
+              <div className="text-sm text-slate-300">{top10Gols[0]?.nome}</div>
+              <div className="text-red-400 font-bold">Mais gols: {top10Gols[0]?.total_gols}</div>
+            </Card>
           </div>
         </div>
       </header>
 
-      {/* Stats Grid */}
-      <div className="border-b border-slate-800/50 bg-black/20 backdrop-blur-sm">
-        <div className="container py-6">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-2xl font-black text-amber-400">{totalStats.totalJogadores}</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Jogadores Únicos</div>
-            </Card>
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-2xl font-black text-amber-400">{totalStats.totalJogos.toLocaleString()}</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Total de Jogos</div>
-            </Card>
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-2xl font-black text-red-400">{totalStats.totalGols.toLocaleString()}</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Total de Gols</div>
-            </Card>
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-2xl font-black text-cyan-400">12</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Temporadas</div>
-            </Card>
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-lg font-black text-amber-400">{totalStats.topJogador.nome.split(" ")[0]}</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Mais jogos: {totalStats.topJogador.total_jogos}</div>
-            </Card>
-            <Card className="bg-slate-900/50 border-slate-800 p-4 text-center">
-              <div className="text-lg font-black text-red-400">{totalStats.topArtilheiro.nome.split(" ")[0]}</div>
-              <div className="text-xs text-slate-400 uppercase tracking-wider mt-2">Mais gols: {totalStats.topArtilheiro.total_gols}</div>
-            </Card>
-          </div>
-        </div>
-      </div>
-
       {/* Charts */}
-      <div className="container py-8">
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          <Card className="bg-slate-900/50 border-slate-800 p-6">
-            <h3 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">Top 10 — Total de Jogos</h3>
-            <ResponsiveContainer width="100%" height={280}>
+      <section className="container py-8">
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-slate-800/30 border-slate-700 p-6">
+            <h3 className="text-amber-400 font-bold uppercase text-sm mb-4">Top 10 — Total de Jogos</h3>
+            <ResponsiveContainer width="100%" height={300}>
               <BarChart data={top10Jogos}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
                 <XAxis dataKey="nome" stroke="#94a3b8" fontSize={12} />
-                <YAxis stroke="#94a3b8" fontSize={12} />
+                <YAxis stroke="#94a3b8" />
                 <Tooltip contentStyle={{ backgroundColor: "#1e293b", border: "1px solid #475569" }} />
-                <Bar dataKey="total_jogos" fill="#fbbf24" radius={4} />
+                <Bar dataKey="total_jogos" fill="#fbbf24" />
               </BarChart>
             </ResponsiveContainer>
           </Card>
 
-          <Card className="bg-slate-900/50 border-slate-800 p-6">
-            <h3 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">Top 10 — Total de Gols</h3>
-            <ResponsiveContainer width="100%" height={280}>
+          <Card className="bg-slate-800/30 border-slate-700 p-6">
+            <h3 className="text-amber-400 font-bold uppercase text-sm mb-4">Top 10 — Total de Gols</h3>
+            <ResponsiveContainer width="100%" height={300}>
               <BarChart data={top10Gols}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#334155" />
                 <XAxis dataKey="nome" stroke="#94a3b8" fontSize={12} />
-                <YAxis stroke="#94a3b8" fontSize={12} />
+                <YAxis stroke="#94a3b8" />
                 <Tooltip contentStyle={{ backgroundColor: "#1e293b", border: "1px solid #475569" }} />
-                <Bar dataKey="total_gols" fill="#f87171" radius={4} />
+                <Bar dataKey="total_gols" fill="#f87171" />
               </BarChart>
             </ResponsiveContainer>
           </Card>
         </div>
-      </div>
+      </section>
 
-      {/* Filters */}
-      <div className="container py-6 border-t border-slate-800/50">
-        <div className="flex flex-wrap gap-3 mb-6">
-          <Input
-            placeholder="Buscar jogador..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="bg-slate-900/50 border-slate-700 text-slate-100 placeholder:text-slate-500 flex-1 min-w-[200px]"
-          />
+      {/* Main Content */}
+      <section className="container pb-8">
+        <Card className="bg-slate-800/30 border-slate-700 overflow-hidden">
+          {/* Filters */}
+          <div className="p-4 border-b border-slate-700 flex flex-wrap gap-3 items-center">
+            <Input
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              placeholder="Buscar jogador..."
+              className="bg-slate-900/50 border-slate-700 text-slate-100 placeholder:text-slate-500 flex-1 min-w-[200px]"
+            />
 
-          <Select value={filterAno} onValueChange={setFilterAno}>
-            <SelectTrigger className="bg-slate-900/50 border-slate-700 text-slate-100 w-[150px]">
-              <SelectValue placeholder="Filtrar por ano" />
-            </SelectTrigger>
-            <SelectContent className="bg-slate-900 border-slate-700">
-              <SelectItem value="all">Todos os anos</SelectItem>
-              {Array.from({ length: 12 }, (_, i) => 2015 + i).map(year => (
-                <SelectItem key={year} value={String(year)}>{year}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+            <Select value={filterAno} onValueChange={setFilterAno}>
+              <SelectTrigger className="bg-slate-900/50 border-slate-700 text-slate-100 w-[150px]">
+                <SelectValue placeholder="Filtrar por ano" />
+              </SelectTrigger>
+              <SelectContent className="bg-slate-900 border-slate-700">
+                <SelectItem value="all">Todos os anos</SelectItem>
+                {Array.from({ length: 12 }, (_, i) => 2015 + i).map(year => (
+                  <SelectItem key={year} value={String(year)}>{year}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
 
-          <Select value={filterMinJogos} onValueChange={setFilterMinJogos}>
-            <SelectTrigger className="bg-slate-900/50 border-slate-700 text-slate-100 w-[140px]">
-              <SelectValue placeholder="Mínimo de jogos" />
-            </SelectTrigger>
-            <SelectContent className="bg-slate-900 border-slate-700">
-              <SelectItem value="0">Todos os jogos</SelectItem>
-              <SelectItem value="10">10+</SelectItem>
-              <SelectItem value="25">25+</SelectItem>
-              <SelectItem value="50">50+</SelectItem>
-              <SelectItem value="100">100+</SelectItem>
-              <SelectItem value="200">200+</SelectItem>
-            </SelectContent>
-          </Select>
+            <Select value={filterMinJogos} onValueChange={setFilterMinJogos}>
+              <SelectTrigger className="bg-slate-900/50 border-slate-700 text-slate-100 w-[140px]">
+                <SelectValue placeholder="Mínimo de jogos" />
+              </SelectTrigger>
+              <SelectContent className="bg-slate-900 border-slate-700">
+                <SelectItem value="0">Todos os jogos</SelectItem>
+                <SelectItem value="10">10+</SelectItem>
+                <SelectItem value="25">25+</SelectItem>
+                <SelectItem value="50">50+</SelectItem>
+                <SelectItem value="100">100+</SelectItem>
+              </SelectContent>
+            </Select>
 
-          <Select value={String(itemsPerPage)} onValueChange={(v) => setItemsPerPage(parseInt(v))}>
-            <SelectTrigger className="bg-slate-900/50 border-slate-700 text-slate-100 w-[140px]">
-              <SelectValue placeholder="Itens por página" />
-            </SelectTrigger>
-            <SelectContent className="bg-slate-900 border-slate-700">
-              <SelectItem value="25">25</SelectItem>
-              <SelectItem value="50">50</SelectItem>
-              <SelectItem value="100">100</SelectItem>
-              <SelectItem value="9999">Todos</SelectItem>
-            </SelectContent>
-          </Select>
+            <Button onClick={handleClear} variant="outline" className="border-slate-700 text-slate-300 hover:bg-slate-800">
+              <RotateCcw className="w-4 h-4 mr-2" />
+              Limpar
+            </Button>
 
-          <Button variant="outline" size="sm" onClick={handleReset} className="border-slate-700 text-slate-300 hover:bg-slate-800">
-            <RotateCcw className="w-4 h-4 mr-2" />
-            Limpar
-          </Button>
+            <Button onClick={() => setShowAddModal(true)} className="bg-green-600 hover:bg-green-700 text-white font-bold">
+              <Plus className="w-4 h-4 mr-2" />
+              Adicionar Jogador
+            </Button>
 
-          <Button size="sm" onClick={handleExportCSV} className="bg-amber-600 hover:bg-amber-700 text-white">
-            <Download className="w-4 h-4 mr-2" />
-            Exportar CSV
-          </Button>
-        </div>
+            <Button onClick={handleExportCSV} className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold">
+              <Download className="w-4 h-4 mr-2" />
+              Exportar CSV
+            </Button>
+          </div>
 
-        <div className="text-sm text-slate-400">
-          {filtrados.length} jogador(es) encontrado(s)
-        </div>
-      </div>
+          <div className="text-sm text-slate-400 px-4 pt-4">
+            {filtrados.length} jogador(es) encontrado(s)
+          </div>
 
-      {/* Table */}
-      <div className="container py-6">
-        <Card className="bg-slate-900/50 border-slate-800 overflow-hidden">
+          {/* Table */}
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="bg-slate-900 border-b border-slate-800">
-                <tr>
-                  <th className="px-4 py-3 text-left text-xs font-bold text-amber-400 uppercase tracking-wider cursor-pointer hover:bg-slate-800" onClick={() => handleSort("rank")}>#</th>
-                  <th className="px-4 py-3 text-left text-xs font-bold text-amber-400 uppercase tracking-wider cursor-pointer hover:bg-slate-800" onClick={() => handleSort("nome")}>Jogador</th>
-                  <th className="px-4 py-3 text-center text-xs font-bold text-amber-400 uppercase tracking-wider cursor-pointer hover:bg-slate-800" onClick={() => handleSort("total_jogos")}>Jogos {sortBy === "total_jogos" && (sortDir === "asc" ? "▲" : "▼")}</th>
-                  <th className="px-4 py-3 text-center text-xs font-bold text-amber-400 uppercase tracking-wider cursor-pointer hover:bg-slate-800" onClick={() => handleSort("total_gols")}>Gols {sortBy === "total_gols" && (sortDir === "asc" ? "▲" : "▼")}</th>
-                  <th className="px-4 py-3 text-center text-xs font-bold text-cyan-400 uppercase tracking-wider cursor-pointer hover:bg-slate-800" onClick={() => handleSort("media_gols")}>Média Gols/Jogo {sortBy === "media_gols" && (sortDir === "asc" ? "▲" : "▼")}</th>
-                  <th className="px-4 py-3 text-center text-xs font-bold text-amber-400 uppercase tracking-wider">Temporadas</th>
-                  <th className="px-4 py-3 text-left text-xs font-bold text-amber-400 uppercase tracking-wider">Anos</th>
-                  <th className="px-4 py-3 text-center text-xs font-bold text-amber-400 uppercase tracking-wider">Ações</th>
+              <thead>
+                <tr className="border-b border-slate-700 bg-slate-900/50">
+                  <th className="px-4 py-3 text-left font-bold text-slate-300">#</th>
+                  <th className="px-4 py-3 text-left font-bold text-slate-300">JOGADOR</th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-amber-400" onClick={() => handleSort("total_jogos")}>
+                    JOGOS {sortBy === "total_jogos" && (sortDir === "desc" ? "▼" : "▲")}
+                  </th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-red-400" onClick={() => handleSort("total_gols")}>
+                    GOLS {sortBy === "total_gols" && (sortDir === "desc" ? "▼" : "▲")}
+                  </th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-cyan-400" onClick={() => handleSort("total_gols")}>
+                    MÉDIA GOLS/JOGO {sortBy === "total_gols" && (sortDir === "desc" ? "▼" : "▲")}
+                  </th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300">TEMPORADAS</th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300">ANOS</th>
+                  <th className="px-4 py-3 text-center font-bold text-slate-300">AÇÕES</th>
                 </tr>
               </thead>
               <tbody>
-                {paginatedData.map((jogador, idx) => {
+                {paginatedJogadores.map((jogador, idx) => {
                   const rank = (currentPage - 1) * itemsPerPage + idx + 1;
                   const media = jogador.total_jogos > 0 ? (jogador.total_gols / jogador.total_jogos).toFixed(2) : "0.00";
                   const rowClass = rank === 1 ? "bg-amber-500/10" : rank === 2 ? "bg-amber-500/5" : rank === 3 ? "bg-amber-500/[0.02]" : "";
@@ -375,14 +373,16 @@ export default function Home() {
                         )}
                       </td>
                       <td className="px-4 py-3 text-center font-bold text-cyan-400">{media}</td>
-                      <td className="px-4 py-3 text-center text-slate-300">{jogador.anos_atuou.length}</td>
-                      <td className="px-4 py-3 text-xs text-slate-400">
-                        {jogador.anos_atuou.map(ano => (
-                          <span key={ano} className="inline-block bg-slate-800 px-2 py-1 rounded mr-1 mb-1">{ano}</span>
-                        ))}
+                      <td className="px-4 py-3 text-center text-slate-400">{jogador.anos_atuou.length}</td>
+                      <td className="px-4 py-3 text-center text-slate-400 text-xs">
+                        <div className="flex flex-wrap gap-1 justify-center">
+                          {jogador.anos_atuou.map(ano => (
+                            <span key={ano} className="bg-slate-700 px-2 py-1 rounded">{ano}</span>
+                          ))}
+                        </div>
                       </td>
                       <td className="px-4 py-3 text-center">
-                        <Button size="sm" variant="ghost" onClick={() => setSelectedJogador(jogador)} className="text-amber-400 hover:bg-slate-800 hover:text-amber-300">
+                        <Button size="sm" onClick={() => setSelectedJogador(jogador)} className="bg-slate-700 hover:bg-slate-600 text-slate-100">
                           Detalhes
                         </Button>
                       </td>
@@ -406,7 +406,63 @@ export default function Home() {
             </div>
           )}
         </Card>
-      </div>
+      </section>
+
+      {/* Modal de Adição de Jogador */}
+      <Dialog open={showAddModal} onOpenChange={setShowAddModal}>
+        <DialogContent className="bg-slate-900 border-slate-700 text-slate-100">
+          <DialogHeader>
+            <DialogTitle className="text-amber-400">Adicionar Novo Jogador</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div>
+              <label className="text-sm text-slate-300 block mb-2">Nome do Jogador</label>
+              <Input
+                value={newJogador.nome}
+                onChange={(e) => setNewJogador({ ...newJogador, nome: e.target.value })}
+                placeholder="Ex: João Silva"
+                className="bg-slate-800 border-slate-700 text-slate-100 placeholder:text-slate-500"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="text-sm text-slate-300 block mb-2">Total de Jogos</label>
+                <Input
+                  type="number"
+                  value={newJogador.total_jogos}
+                  onChange={(e) => setNewJogador({ ...newJogador, total_jogos: parseInt(e.target.value) || 0 })}
+                  placeholder="0"
+                  className="bg-slate-800 border-slate-700 text-slate-100"
+                />
+              </div>
+              <div>
+                <label className="text-sm text-slate-300 block mb-2">Total de Gols</label>
+                <Input
+                  type="number"
+                  value={newJogador.total_gols}
+                  onChange={(e) => setNewJogador({ ...newJogador, total_gols: parseInt(e.target.value) || 0 })}
+                  placeholder="0"
+                  className="bg-slate-800 border-slate-700 text-slate-100"
+                />
+              </div>
+            </div>
+            <div className="bg-slate-800/50 border border-slate-700 rounded p-3">
+              <p className="text-sm text-slate-300">Média de Gols/Jogo:</p>
+              <p className="text-2xl font-bold text-cyan-400">
+                {newJogador.total_jogos > 0 ? (newJogador.total_gols / newJogador.total_jogos).toFixed(2) : "0.00"}
+              </p>
+            </div>
+            <div className="flex gap-2 justify-end">
+              <Button onClick={() => setShowAddModal(false)} variant="outline" className="border-slate-700 text-slate-300 hover:bg-slate-800">
+                Cancelar
+              </Button>
+              <Button onClick={handleAddJogador} className="bg-green-600 hover:bg-green-700 text-white font-bold">
+                Adicionar Jogador
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
 
       {/* Modal de Detalhes */}
       <Dialog open={!!selectedJogador} onOpenChange={(open) => !open && setSelectedJogador(null)}>
@@ -417,7 +473,7 @@ export default function Home() {
           {selectedJogador && (
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                  <Card className="bg-slate-800/50 border-slate-700 p-4 text-center cursor-pointer hover:border-amber-400 transition" onClick={() => handleCellEdit(selectedJogador.nome, 'total_jogos', String(selectedJogador.total_jogos))}>
+                <Card className="bg-slate-800/50 border-slate-700 p-4 text-center cursor-pointer hover:border-amber-400 transition" onClick={() => handleCellEdit(selectedJogador.nome, 'total_jogos', String(selectedJogador.total_jogos))}>
                   {editingCell?.nome === selectedJogador.nome && editingCell?.field === 'total_jogos' ? (
                     <input
                       type="number"
@@ -468,39 +524,17 @@ export default function Home() {
                   <div className="text-xs text-slate-400 uppercase mt-2">Média Gols/Jogo (automática)</div>
                 </Card>
               </div>
-
-              <div>
-                <h4 className="text-sm font-bold text-amber-400 uppercase tracking-wider mb-4">Desempenho por Temporada</h4>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead className="bg-slate-800">
-                      <tr>
-                        <th className="px-4 py-2 text-left text-xs font-bold text-slate-300">Ano</th>
-                        <th className="px-4 py-2 text-center text-xs font-bold text-slate-300">Jogos</th>
-                        <th className="px-4 py-2 text-center text-xs font-bold text-slate-300">Gols</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {selectedJogador.anos_atuou.map(ano => (
-                        <tr key={ano} className="border-b border-slate-800">
-                          <td className="px-4 py-2 text-slate-300">{ano}</td>
-                          <td className="px-4 py-2 text-center text-amber-400">{selectedJogador.jogos_por_ano[ano] || 0}</td>
-                          <td className="px-4 py-2 text-center text-red-400">{selectedJogador.gols_por_ano[ano] || 0}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           )}
         </DialogContent>
       </Dialog>
 
       {/* Footer */}
-      <footer className="border-t border-slate-800/50 bg-black/40 backdrop-blur-sm mt-12">
-        <div className="container py-6 text-center text-xs text-slate-500">
-          Dados coletados de <a href="https://www.meutimao.com.br" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300">meutimao.com.br</a> · Temporadas 2015 a 2026 · Sport Club Corinthians Paulista
+      <footer className="bg-slate-950 border-t border-slate-800 py-4 mt-8">
+        <div className="container text-center text-sm text-slate-500">
+          <a href="https://www.meutimao.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300">
+            meutimao.com.br
+          </a>
         </div>
       </footer>
     </div>
