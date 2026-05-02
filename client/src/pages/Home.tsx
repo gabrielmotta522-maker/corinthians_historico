@@ -27,6 +27,7 @@ export default function Home() {
   const [filterMinJogos, setFilterMinJogos] = useState("0");
   const [sortBy, setSortBy] = useState("total_jogos");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
+  const [sortByMedia, setSortByMedia] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [selectedJogador, setSelectedJogador] = useState<Jogador | null>(null);
@@ -52,12 +53,21 @@ export default function Home() {
 
     // Ordenar
     result.sort((a, b) => {
-      let aVal: any = a[sortBy as keyof Jogador];
-      let bVal: any = b[sortBy as keyof Jogador];
+      let aVal: any;
+      let bVal: any;
 
-      if (sortBy === "total_jogos" || sortBy === "total_gols") {
-        aVal = aVal as number;
-        bVal = bVal as number;
+      if (sortByMedia) {
+        // Ordenar por média de gols/jogo
+        aVal = a.total_jogos > 0 ? a.total_gols / a.total_jogos : 0;
+        bVal = b.total_jogos > 0 ? b.total_gols / b.total_jogos : 0;
+      } else {
+        aVal = a[sortBy as keyof Jogador];
+        bVal = b[sortBy as keyof Jogador];
+
+        if (sortBy === "total_jogos" || sortBy === "total_gols") {
+          aVal = aVal as number;
+          bVal = bVal as number;
+        }
       }
 
       if (typeof aVal === "number" && typeof bVal === "number") {
@@ -68,9 +78,10 @@ export default function Home() {
 
     setFiltrados(result);
     setCurrentPage(1);
-  }, [jogadores, searchTerm, filterAno, filterMinJogos, sortBy, sortDir]);
+  }, [jogadores, searchTerm, filterAno, filterMinJogos, sortBy, sortDir, sortByMedia]);
 
   const handleSort = (field: string) => {
+    setSortByMedia(false);
     if (sortBy === field) {
       setSortDir(sortDir === "desc" ? "asc" : "desc");
     } else {
@@ -314,8 +325,15 @@ export default function Home() {
                   <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-red-400" onClick={() => handleSort("total_gols")}>
                     GOLS {sortBy === "total_gols" && (sortDir === "desc" ? "▼" : "▲")}
                   </th>
-                  <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-cyan-400" onClick={() => handleSort("total_gols")}>
-                    MÉDIA GOLS/JOGO {sortBy === "total_gols" && (sortDir === "desc" ? "▼" : "▲")}
+                  <th className="px-4 py-3 text-center font-bold text-slate-300 cursor-pointer hover:text-cyan-400" onClick={() => {
+                    if (sortByMedia) {
+                      setSortDir(sortDir === "desc" ? "asc" : "desc");
+                    } else {
+                      setSortByMedia(true);
+                      setSortDir("desc");
+                    }
+                  }}>
+                    MÉDIA GOLS/JOGO {sortByMedia && (sortDir === "desc" ? "▼" : "▲")}
                   </th>
                   <th className="px-4 py-3 text-center font-bold text-slate-300">TEMPORADAS</th>
                   <th className="px-4 py-3 text-center font-bold text-slate-300">ANOS</th>
