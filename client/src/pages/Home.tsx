@@ -22,19 +22,22 @@ interface Jogador {
 export default function Home() {
   // Carregar dados do localStorage ou usar dados padrão
   const [jogadores, setJogadores] = useState<Jogador[]>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('corinthians_jogadores');
-      if (saved) {
-        try {
-          return JSON.parse(saved);
-        } catch (e) {
-          console.error('Erro ao carregar dados do localStorage:', e);
+    if (typeof window !== 'undefined' && localStorage) {
+      try {
+        const saved = localStorage.getItem('corinthians_jogadores');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          console.log('Dados carregados do localStorage:', parsed.length, 'jogadores');
+          return parsed;
         }
+      } catch (e) {
+        console.error('Erro ao carregar dados do localStorage:', e);
       }
     }
+    console.log('Usando dados padrão:', jogadoresData.length, 'jogadores');
     return jogadoresData;
   });
-  const [filtrados, setFiltrados] = useState<Jogador[]>([]);
+  const [filtrados, setFiltrados] = useState<Jogador[]>(jogadores);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterAno, setFilterAno] = useState("");
   const [filterMinJogos, setFilterMinJogos] = useState("0");
@@ -51,9 +54,38 @@ export default function Home() {
 
   // Salvar dados no localStorage sempre que jogadores mudar
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('corinthians_jogadores', JSON.stringify(jogadores));
+    if (typeof window !== 'undefined' && localStorage) {
+      try {
+        const dataToSave = JSON.stringify(jogadores);
+        localStorage.setItem('corinthians_jogadores', dataToSave);
+        console.log('✓ Dados salvos no localStorage:', jogadores.length, 'jogadores');
+        
+        // Verificar se foi salvo corretamente
+        const verify = localStorage.getItem('corinthians_jogadores');
+        if (verify) {
+          console.log('✓ Verificação: dados foram salvos com sucesso');
+        }
+      } catch (e) {
+        console.error('✗ Erro ao salvar no localStorage:', e);
+      }
     }
+  }, [jogadores]);
+
+  // Salvar no localStorage quando a página está prestes a ser fechada
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (typeof window !== 'undefined' && localStorage) {
+        try {
+          localStorage.setItem('corinthians_jogadores', JSON.stringify(jogadores));
+          console.log('✓ Dados salvos antes de deslogar');
+        } catch (e) {
+          console.error('Erro ao salvar antes de deslogar:', e);
+        }
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, [jogadores]);
 
   // Aplicar filtros
@@ -149,6 +181,7 @@ export default function Home() {
     if (!editingCell || editValue === "") return;
     
     const newValue = parseInt(editValue) || 0;
+    console.log('Editando:', jogadorNome, editingCell.field, 'novo valor:', newValue);
     const updatedJogadores = jogadores.map(j => {
       if (j.nome === jogadorNome) {
         if (editingCell.field === 'total_jogos') {
@@ -160,6 +193,7 @@ export default function Home() {
       return j;
     });
     
+    console.log('Jogadores atualizados:', updatedJogadores.find(j => j.nome === jogadorNome));
     setJogadores(updatedJogadores);
     setEditingCell(null);
     setEditValue("");
