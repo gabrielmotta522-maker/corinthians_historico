@@ -1,0 +1,3807 @@
+[
+  {
+    "nome": "Cássio",
+    "total_jogos": 568,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 63,
+      "2016": 45,
+      "2017": 67,
+      "2018": 63,
+      "2019": 68,
+      "2020": 45,
+      "2021": 69,
+      "2022": 64,
+      "2023": 66,
+      "2024": 18
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Fagner",
+    "total_jogos": 517,
+    "total_gols": 10,
+    "jogos_por_ano": {
+      "2015": 51,
+      "2016": 58,
+      "2017": 56,
+      "2018": 49,
+      "2019": 60,
+      "2020": 45,
+      "2021": 56,
+      "2022": 43,
+      "2023": 57,
+      "2024": 42
+    },
+    "gols_por_ano": {
+      "2015": 2,
+      "2016": 3,
+      "2017": 0,
+      "2018": 0,
+      "2019": 1,
+      "2020": 2,
+      "2021": 2,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Romero",
+    "total_jogos": 350,
+    "total_gols": 66,
+    "jogos_por_ano": {
+      "2015": 18,
+      "2016": 56,
+      "2017": 58,
+      "2018": 63,
+      "2023": 42,
+      "2024": 60,
+      "2025": 53
+    },
+    "gols_por_ano": {
+      "2015": 4,
+      "2016": 15,
+      "2017": 6,
+      "2018": 12,
+      "2023": 8,
+      "2024": 16,
+      "2025": 5
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Gil",
+    "total_jogos": 318,
+    "total_gols": 14,
+    "jogos_por_ano": {
+      "2015": 57,
+      "2016": 1,
+      "2019": 35,
+      "2020": 47,
+      "2021": 66,
+      "2022": 51,
+      "2023": 61
+    },
+    "gols_por_ano": {
+      "2015": 2,
+      "2016": 0,
+      "2019": 1,
+      "2020": 4,
+      "2021": 1,
+      "2022": 2,
+      "2023": 4
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Maycon",
+    "total_jogos": 247,
+    "total_gols": 18,
+    "jogos_por_ano": {
+      "2016": 15,
+      "2017": 58,
+      "2018": 34,
+      "2022": 26,
+      "2023": 58,
+      "2024": 13,
+      "2025": 43
+    },
+    "gols_por_ano": {
+      "2016": 1,
+      "2017": 5,
+      "2018": 2,
+      "2022": 2,
+      "2023": 3,
+      "2024": 2,
+      "2025": 3
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018,
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Gabriel",
+    "total_jogos": 238,
+    "total_gols": 8,
+    "jogos_por_ano": {
+      "2017": 64,
+      "2018": 59,
+      "2019": 26,
+      "2020": 34,
+      "2021": 54,
+      "2022": 1
+    },
+    "gols_por_ano": {
+      "2017": 2,
+      "2018": 2,
+      "2019": 0,
+      "2020": 0,
+      "2021": 4,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Yuri Alberto",
+    "total_jogos": 227,
+    "total_gols": 81,
+    "jogos_por_ano": {
+      "2022": 28,
+      "2023": 63,
+      "2024": 58,
+      "2025": 58,
+      "2026": 20
+    },
+    "gols_por_ano": {
+      "2022": 11,
+      "2023": 15,
+      "2024": 31,
+      "2025": 19,
+      "2026": 5
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Mateus Vital",
+    "total_jogos": 207,
+    "total_gols": 14,
+    "jogos_por_ano": {
+      "2018": 60,
+      "2019": 55,
+      "2020": 31,
+      "2021": 41,
+      "2022": 20
+    },
+    "gols_por_ano": {
+      "2018": 2,
+      "2019": 3,
+      "2020": 2,
+      "2021": 7,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Jadson",
+    "total_jogos": 201,
+    "total_gols": 42,
+    "jogos_por_ano": {
+      "2015": 59,
+      "2017": 48,
+      "2018": 55,
+      "2019": 39
+    },
+    "gols_por_ano": {
+      "2015": 16,
+      "2017": 10,
+      "2018": 15,
+      "2019": 1
+    },
+    "anos_atuou": [
+      2015,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Fábio Santos",
+    "total_jogos": 177,
+    "total_gols": 21,
+    "jogos_por_ano": {
+      "2015": 17,
+      "2020": 9,
+      "2021": 55,
+      "2022": 41,
+      "2023": 55
+    },
+    "gols_por_ano": {
+      "2015": 3,
+      "2020": 2,
+      "2021": 6,
+      "2022": 5,
+      "2023": 5
+    },
+    "anos_atuou": [
+      2015,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Gustavo Mosquito",
+    "total_jogos": 177,
+    "total_gols": 18,
+    "jogos_por_ano": {
+      "2019": 6,
+      "2020": 17,
+      "2021": 63,
+      "2022": 50,
+      "2023": 14,
+      "2024": 27
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2020": 2,
+      "2021": 9,
+      "2022": 5,
+      "2023": 1,
+      "2024": 1
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Jô",
+    "total_jogos": 169,
+    "total_gols": 47,
+    "jogos_por_ano": {
+      "2017": 64,
+      "2020": 23,
+      "2021": 63,
+      "2022": 19
+    },
+    "gols_por_ano": {
+      "2017": 25,
+      "2020": 6,
+      "2021": 12,
+      "2022": 4
+    },
+    "anos_atuou": [
+      2017,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Renato Augusto",
+    "total_jogos": 168,
+    "total_gols": 22,
+    "jogos_por_ano": {
+      "2015": 52,
+      "2021": 21,
+      "2022": 50,
+      "2023": 45
+    },
+    "gols_por_ano": {
+      "2015": 7,
+      "2021": 4,
+      "2022": 5,
+      "2023": 6
+    },
+    "anos_atuou": [
+      2015,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Balbuena",
+    "total_jogos": 167,
+    "total_gols": 15,
+    "jogos_por_ano": {
+      "2016": 41,
+      "2017": 61,
+      "2018": 34,
+      "2022": 21,
+      "2023": 10
+    },
+    "gols_por_ano": {
+      "2016": 2,
+      "2017": 6,
+      "2018": 3,
+      "2022": 3,
+      "2023": 1
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Rodriguinho",
+    "total_jogos": 160,
+    "total_gols": 35,
+    "jogos_por_ano": {
+      "2015": 13,
+      "2016": 52,
+      "2017": 57,
+      "2018": 38
+    },
+    "gols_por_ano": {
+      "2015": 3,
+      "2016": 10,
+      "2017": 11,
+      "2018": 11
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Ralf",
+    "total_jogos": 145,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2015": 60,
+      "2018": 33,
+      "2019": 52
+    },
+    "gols_por_ano": {
+      "2015": 1,
+      "2018": 1,
+      "2019": 1
+    },
+    "anos_atuou": [
+      2015,
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Matheus Bidu",
+    "total_jogos": 144,
+    "total_gols": 10,
+    "jogos_por_ano": {
+      "2023": 38,
+      "2024": 34,
+      "2025": 49,
+      "2026": 23
+    },
+    "gols_por_ano": {
+      "2023": 1,
+      "2024": 2,
+      "2025": 5,
+      "2026": 2
+    },
+    "anos_atuou": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Clayson",
+    "total_jogos": 143,
+    "total_gols": 14,
+    "jogos_por_ano": {
+      "2017": 29,
+      "2018": 51,
+      "2019": 63
+    },
+    "gols_por_ano": {
+      "2017": 4,
+      "2018": 3,
+      "2019": 7
+    },
+    "anos_atuou": [
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Giuliano",
+    "total_jogos": 143,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2021": 21,
+      "2022": 63,
+      "2023": 59
+    },
+    "gols_por_ano": {
+      "2021": 3,
+      "2022": 7,
+      "2023": 2
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Pedrinho",
+    "total_jogos": 141,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2017": 20,
+      "2018": 57,
+      "2019": 60,
+      "2020": 4
+    },
+    "gols_por_ano": {
+      "2017": 1,
+      "2018": 4,
+      "2019": 7,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Matheuzinho",
+    "total_jogos": 134,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2024": 52,
+      "2025": 58,
+      "2026": 24
+    },
+    "gols_por_ano": {
+      "2024": 2,
+      "2025": 3,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Raniele",
+    "total_jogos": 133,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2024": 58,
+      "2025": 52,
+      "2026": 23
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 3,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Pedro Henrique",
+    "total_jogos": 130,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2015": 1,
+      "2016": 15,
+      "2017": 33,
+      "2018": 30,
+      "2019": 10,
+      "2020": 14,
+      "2024": 27
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 2,
+      "2018": 2,
+      "2019": 0,
+      "2020": 0,
+      "2024": 2
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2024
+    ]
+  },
+  {
+    "nome": "Róger Guedes",
+    "total_jogos": 126,
+    "total_gols": 43,
+    "jogos_por_ano": {
+      "2021": 19,
+      "2022": 66,
+      "2023": 41
+    },
+    "gols_por_ano": {
+      "2021": 7,
+      "2022": 15,
+      "2023": 21
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Rodrigo Garro",
+    "total_jogos": 125,
+    "total_gols": 16,
+    "jogos_por_ano": {
+      "2024": 63,
+      "2025": 38,
+      "2026": 24
+    },
+    "gols_por_ano": {
+      "2024": 13,
+      "2025": 2,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Breno Bidon",
+    "total_jogos": 124,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2024": 45,
+      "2025": 56,
+      "2026": 23
+    },
+    "gols_por_ano": {
+      "2024": 1,
+      "2025": 1,
+      "2026": 2
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Camacho",
+    "total_jogos": 123,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2016": 21,
+      "2017": 48,
+      "2018": 6,
+      "2020": 29,
+      "2021": 19
+    },
+    "gols_por_ano": {
+      "2016": 1,
+      "2017": 1,
+      "2018": 0,
+      "2020": 0,
+      "2021": 1
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018,
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Vagner Love",
+    "total_jogos": 121,
+    "total_gols": 29,
+    "jogos_por_ano": {
+      "2015": 50,
+      "2019": 62,
+      "2020": 9
+    },
+    "gols_por_ano": {
+      "2015": 16,
+      "2019": 12,
+      "2020": 1
+    },
+    "anos_atuou": [
+      2015,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Ramiro",
+    "total_jogos": 120,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2019": 39,
+      "2020": 35,
+      "2021": 32,
+      "2022": 14
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2020": 3,
+      "2021": 3,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Bruno Méndez",
+    "total_jogos": 119,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2019": 9,
+      "2020": 13,
+      "2021": 22,
+      "2022": 22,
+      "2023": 53
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2020": 0,
+      "2021": 1,
+      "2022": 0,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Cantillo",
+    "total_jogos": 118,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2020": 32,
+      "2021": 40,
+      "2022": 34,
+      "2023": 12
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2021": 2,
+      "2022": 0,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Adson",
+    "total_jogos": 114,
+    "total_gols": 13,
+    "jogos_por_ano": {
+      "2021": 24,
+      "2022": 49,
+      "2023": 41
+    },
+    "gols_por_ano": {
+      "2021": 3,
+      "2022": 5,
+      "2023": 5
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Hugo Souza",
+    "total_jogos": 114,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2024": 34,
+      "2025": 56,
+      "2026": 24
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Danilo Avelar",
+    "total_jogos": 110,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2018": 30,
+      "2019": 59,
+      "2020": 21
+    },
+    "gols_por_ano": {
+      "2018": 2,
+      "2019": 7,
+      "2020": 3
+    },
+    "anos_atuou": [
+      2018,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Lucas Piton",
+    "total_jogos": 108,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2019": 1,
+      "2020": 33,
+      "2021": 22,
+      "2022": 52
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2020": 0,
+      "2021": 1,
+      "2022": 1
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Roni",
+    "total_jogos": 107,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2020": 7,
+      "2021": 36,
+      "2022": 32,
+      "2023": 32
+    },
+    "gols_por_ano": {
+      "2020": 1,
+      "2021": 3,
+      "2022": 0,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Danilo",
+    "total_jogos": 102,
+    "total_gols": 9,
+    "jogos_por_ano": {
+      "2015": 53,
+      "2016": 27,
+      "2017": 2,
+      "2018": 20
+    },
+    "gols_por_ano": {
+      "2015": 4,
+      "2016": 3,
+      "2017": 0,
+      "2018": 2
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Marquinhos Gabriel",
+    "total_jogos": 102,
+    "total_gols": 13,
+    "jogos_por_ano": {
+      "2016": 39,
+      "2017": 37,
+      "2018": 26
+    },
+    "gols_por_ano": {
+      "2016": 6,
+      "2017": 5,
+      "2018": 2
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Henrique",
+    "total_jogos": 101,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2018": 66,
+      "2019": 35
+    },
+    "gols_por_ano": {
+      "2018": 3,
+      "2019": 2
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Du Queiroz",
+    "total_jogos": 99,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2021": 16,
+      "2022": 66,
+      "2023": 17
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 3,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Gustavo Henrique",
+    "total_jogos": 97,
+    "total_gols": 9,
+    "jogos_por_ano": {
+      "2024": 36,
+      "2025": 39,
+      "2026": 22
+    },
+    "gols_por_ano": {
+      "2024": 2,
+      "2025": 4,
+      "2026": 3
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Fausto",
+    "total_jogos": 96,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2022": 26,
+      "2023": 47,
+      "2024": 23
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 1,
+      "2024": 1
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Uendel",
+    "total_jogos": 93,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2015": 37,
+      "2016": 56
+    },
+    "gols_por_ano": {
+      "2015": 2,
+      "2016": 3
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "André Carrillo",
+    "total_jogos": 90,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2024": 19,
+      "2025": 52,
+      "2026": 19
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 3,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Guilherme Arana",
+    "total_jogos": 87,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2015": 12,
+      "2016": 21,
+      "2017": 54
+    },
+    "gols_por_ano": {
+      "2015": 1,
+      "2016": 1,
+      "2017": 2
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "André Ramalho",
+    "total_jogos": 86,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 29,
+      "2025": 44,
+      "2026": 13
+    },
+    "gols_por_ano": {
+      "2024": 1,
+      "2025": 0,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Bruno Henrique",
+    "total_jogos": 85,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2015": 42,
+      "2016": 43
+    },
+    "gols_por_ano": {
+      "2015": 2,
+      "2016": 4
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Wesley",
+    "total_jogos": 85,
+    "total_gols": 7,
+    "jogos_por_ano": {
+      "2022": 4,
+      "2023": 34,
+      "2024": 47
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 2,
+      "2024": 5
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Luan",
+    "total_jogos": 80,
+    "total_gols": 11,
+    "jogos_por_ano": {
+      "2020": 41,
+      "2021": 36,
+      "2022": 3
+    },
+    "gols_por_ano": {
+      "2020": 6,
+      "2021": 5,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Félix Torres",
+    "total_jogos": 80,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2024": 52,
+      "2025": 28
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 1
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Felipe",
+    "total_jogos": 79,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2015": 51,
+      "2016": 28
+    },
+    "gols_por_ano": {
+      "2015": 4,
+      "2016": 2
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "João Victor",
+    "total_jogos": 79,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 3,
+      "2021": 48,
+      "2022": 28
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2021": 0,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2019,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Giovanni Augusto",
+    "total_jogos": 78,
+    "total_gols": 7,
+    "jogos_por_ano": {
+      "2016": 53,
+      "2017": 24,
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2016": 6,
+      "2017": 1,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Memphis Depay",
+    "total_jogos": 77,
+    "total_gols": 20,
+    "jogos_por_ano": {
+      "2024": 14,
+      "2025": 51,
+      "2026": 12
+    },
+    "gols_por_ano": {
+      "2024": 7,
+      "2025": 12,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Hugo Farias",
+    "total_jogos": 75,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2024": 52,
+      "2025": 20,
+      "2026": 3
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Mauro Boselli",
+    "total_jogos": 72,
+    "total_gols": 17,
+    "jogos_por_ano": {
+      "2019": 48,
+      "2020": 24
+    },
+    "gols_por_ano": {
+      "2019": 11,
+      "2020": 6
+    },
+    "anos_atuou": [
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Cacá",
+    "total_jogos": 72,
+    "total_gols": 8,
+    "jogos_por_ano": {
+      "2024": 40,
+      "2025": 31,
+      "2026": 1
+    },
+    "gols_por_ano": {
+      "2024": 6,
+      "2025": 2,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Charles",
+    "total_jogos": 72,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 24,
+      "2025": 37,
+      "2026": 11
+    },
+    "gols_por_ano": {
+      "2024": 1,
+      "2025": 1,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Walter",
+    "total_jogos": 70,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 10,
+      "2016": 24,
+      "2017": 1,
+      "2018": 15,
+      "2019": 13,
+      "2020": 7
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "José Martínez",
+    "total_jogos": 70,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 18,
+      "2025": 52
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 2
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Lucca",
+    "total_jogos": 69,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2015": 10,
+      "2016": 49,
+      "2018": 10
+    },
+    "gols_por_ano": {
+      "2015": 3,
+      "2016": 9,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2018
+    ]
+  },
+  {
+    "nome": "Gustavo",
+    "total_jogos": 69,
+    "total_gols": 15,
+    "jogos_por_ano": {
+      "2016": 9,
+      "2019": 55,
+      "2020": 5
+    },
+    "gols_por_ano": {
+      "2016": 0,
+      "2019": 15,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2016,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Elias",
+    "total_jogos": 68,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2015": 45,
+      "2016": 23
+    },
+    "gols_por_ano": {
+      "2015": 9,
+      "2016": 3
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Vitinho",
+    "total_jogos": 67,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2021": 29,
+      "2025": 17,
+      "2026": 21
+    },
+    "gols_por_ano": {
+      "2021": 1,
+      "2025": 0,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2021,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Igor Coronado",
+    "total_jogos": 67,
+    "total_gols": 7,
+    "jogos_por_ano": {
+      "2024": 45,
+      "2025": 22
+    },
+    "gols_por_ano": {
+      "2024": 4,
+      "2025": 3
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Talles Magno",
+    "total_jogos": 67,
+    "total_gols": 9,
+    "jogos_por_ano": {
+      "2024": 19,
+      "2025": 48
+    },
+    "gols_por_ano": {
+      "2024": 3,
+      "2025": 6
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Yago",
+    "total_jogos": 62,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2015": 18,
+      "2016": 40,
+      "2017": 2,
+      "2024": 2
+    },
+    "gols_por_ano": {
+      "2015": 1,
+      "2016": 1,
+      "2017": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017,
+      2024
+    ]
+  },
+  {
+    "nome": "Ángelo Araos",
+    "total_jogos": 61,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 19,
+      "2019": 3,
+      "2020": 15,
+      "2021": 24
+    },
+    "gols_por_ano": {
+      "2018": 0,
+      "2019": 0,
+      "2020": 1,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019,
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Emerson Sheik",
+    "total_jogos": 59,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2015": 20,
+      "2018": 39
+    },
+    "gols_por_ano": {
+      "2015": 3,
+      "2018": 2
+    },
+    "anos_atuou": [
+      2015,
+      2018
+    ]
+  },
+  {
+    "nome": "Manoel",
+    "total_jogos": 59,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2019": 59
+    },
+    "gols_por_ano": {
+      "2019": 3
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Ryan",
+    "total_jogos": 59,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2023": 2,
+      "2024": 22,
+      "2025": 34,
+      "2026": 1
+    },
+    "gols_por_ano": {
+      "2023": 1,
+      "2024": 0,
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Pedro Raul",
+    "total_jogos": 56,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2024": 33,
+      "2025": 6,
+      "2026": 17
+    },
+    "gols_por_ano": {
+      "2024": 3,
+      "2025": 1,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Léo Natel",
+    "total_jogos": 55,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2020": 25,
+      "2021": 29,
+      "2022": 1
+    },
+    "gols_por_ano": {
+      "2020": 2,
+      "2021": 2,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Raul Gustavo",
+    "total_jogos": 54,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2021": 14,
+      "2022": 33,
+      "2024": 7
+    },
+    "gols_por_ano": {
+      "2021": 2,
+      "2022": 4,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2024
+    ]
+  },
+  {
+    "nome": "Júnior Urso",
+    "total_jogos": 53,
+    "total_gols": 7,
+    "jogos_por_ano": {
+      "2019": 53
+    },
+    "gols_por_ano": {
+      "2019": 7
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Xavier",
+    "total_jogos": 52,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2020": 14,
+      "2021": 27,
+      "2022": 11
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2021": 0,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Paulinho",
+    "total_jogos": 52,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2022": 20,
+      "2023": 19,
+      "2024": 13
+    },
+    "gols_por_ano": {
+      "2022": 4,
+      "2023": 2,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Pablo",
+    "total_jogos": 51,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2017": 51
+    },
+    "gols_por_ano": {
+      "2017": 2
+    },
+    "anos_atuou": [
+      2017
+    ]
+  },
+  {
+    "nome": "Guilherme",
+    "total_jogos": 50,
+    "total_gols": 8,
+    "jogos_por_ano": {
+      "2016": 43,
+      "2017": 7
+    },
+    "gols_por_ano": {
+      "2016": 8,
+      "2017": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Marlone",
+    "total_jogos": 50,
+    "total_gols": 9,
+    "jogos_por_ano": {
+      "2016": 38,
+      "2017": 12
+    },
+    "gols_por_ano": {
+      "2016": 8,
+      "2017": 1
+    },
+    "anos_atuou": [
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Sornoza",
+    "total_jogos": 50,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2019": 50
+    },
+    "gols_por_ano": {
+      "2019": 1
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Cristian",
+    "total_jogos": 49,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2015": 26,
+      "2016": 21,
+      "2017": 2
+    },
+    "gols_por_ano": {
+      "2015": 2,
+      "2016": 0,
+      "2017": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Fabrizio Angileri",
+    "total_jogos": 49,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 42,
+      "2026": 7
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Malcom",
+    "total_jogos": 48,
+    "total_gols": 8,
+    "jogos_por_ano": {
+      "2015": 46,
+      "2016": 2
+    },
+    "gols_por_ano": {
+      "2015": 8,
+      "2016": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Sidcley",
+    "total_jogos": 48,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2018": 27,
+      "2020": 21
+    },
+    "gols_por_ano": {
+      "2018": 3,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2018,
+      2020
+    ]
+  },
+  {
+    "nome": "Giovane",
+    "total_jogos": 48,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2022": 16,
+      "2023": 8,
+      "2024": 22,
+      "2025": 2
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 1,
+      "2024": 3,
+      "2025": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Gabriel Pereira",
+    "total_jogos": 47,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2020": 4,
+      "2021": 38,
+      "2022": 5
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2021": 2,
+      "2022": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Edílson",
+    "total_jogos": 45,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2015": 33,
+      "2016": 12
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 1
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Luciano",
+    "total_jogos": 45,
+    "total_gols": 9,
+    "jogos_por_ano": {
+      "2015": 21,
+      "2016": 24
+    },
+    "gols_por_ano": {
+      "2015": 8,
+      "2016": 1
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Willian",
+    "total_jogos": 45,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2021": 9,
+      "2022": 36
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 1
+    },
+    "anos_atuou": [
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "João Pedro",
+    "total_jogos": 45,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2021": 1,
+      "2022": 7,
+      "2024": 3,
+      "2025": 29,
+      "2026": 5
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 0,
+      "2024": 0,
+      "2025": 1,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Matheus Araújo",
+    "total_jogos": 45,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 31,
+      "2024": 12
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 2,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Léo Santos",
+    "total_jogos": 44,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2016": 1,
+      "2017": 3,
+      "2018": 33,
+      "2019": 4,
+      "2021": 3
+    },
+    "gols_por_ano": {
+      "2016": 0,
+      "2017": 1,
+      "2018": 0,
+      "2019": 0,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ]
+  },
+  {
+    "nome": "Gustavo Mantuan",
+    "total_jogos": 43,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2020": 7,
+      "2021": 3,
+      "2022": 33
+    },
+    "gols_por_ano": {
+      "2020": 1,
+      "2021": 0,
+      "2022": 5
+    },
+    "anos_atuou": [
+      2020,
+      2021,
+      2022
+    ]
+  },
+  {
+    "nome": "Carlos Augusto",
+    "total_jogos": 41,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 9,
+      "2019": 24,
+      "2020": 8
+    },
+    "gols_por_ano": {
+      "2018": 0,
+      "2019": 1,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Otero",
+    "total_jogos": 41,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2020": 17,
+      "2021": 24
+    },
+    "gols_por_ano": {
+      "2020": 2,
+      "2021": 2
+    },
+    "anos_atuou": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Janderson",
+    "total_jogos": 38,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2019": 23,
+      "2020": 15
+    },
+    "gols_por_ano": {
+      "2019": 2,
+      "2020": 1
+    },
+    "anos_atuou": [
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Caetano",
+    "total_jogos": 38,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2023": 23,
+      "2024": 15
+    },
+    "gols_por_ano": {
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Kazim",
+    "total_jogos": 37,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2017": 30,
+      "2018": 7
+    },
+    "gols_por_ano": {
+      "2017": 3,
+      "2018": 1
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Alex Santana",
+    "total_jogos": 37,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 15,
+      "2025": 22
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 2
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Everaldo",
+    "total_jogos": 36,
+    "total_gols": 4,
+    "jogos_por_ano": {
+      "2019": 9,
+      "2020": 23,
+      "2021": 4
+    },
+    "gols_por_ano": {
+      "2019": 1,
+      "2020": 3,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Gui Negão",
+    "total_jogos": 36,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2025": 24,
+      "2026": 12
+    },
+    "gols_por_ano": {
+      "2025": 5,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "André Luiz",
+    "total_jogos": 35,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2025": 12,
+      "2026": 23
+    },
+    "gols_por_ano": {
+      "2025": 2,
+      "2026": 3
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Marllon",
+    "total_jogos": 34,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 4,
+      "2019": 16,
+      "2020": 12,
+      "2021": 2
+    },
+    "gols_por_ano": {
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019,
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Edu Dracena",
+    "total_jogos": 33,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2015": 33
+    },
+    "gols_por_ano": {
+      "2015": 2
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Ruan Oliveira",
+    "total_jogos": 32,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2020": 4,
+      "2023": 28
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2023": 2
+    },
+    "anos_atuou": [
+      2020,
+      2023
+    ]
+  },
+  {
+    "nome": "Mendoza",
+    "total_jogos": 31,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2015": 29,
+      "2016": 2
+    },
+    "gols_por_ano": {
+      "2015": 3,
+      "2016": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Rafael Ramos",
+    "total_jogos": 31,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 24,
+      "2023": 7
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Michel Macedo",
+    "total_jogos": 30,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2019": 20,
+      "2020": 8,
+      "2021": 2
+    },
+    "gols_por_ano": {
+      "2019": 1,
+      "2020": 0,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2019,
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Biro",
+    "total_jogos": 30,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 2,
+      "2023": 17,
+      "2024": 11
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Léo Mana",
+    "total_jogos": 30,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 1,
+      "2023": 6,
+      "2024": 9,
+      "2025": 14
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0,
+      "2025": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Matías Rojas",
+    "total_jogos": 30,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2023": 20,
+      "2024": 10
+    },
+    "gols_por_ano": {
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "André",
+    "total_jogos": 29,
+    "total_gols": 6,
+    "jogos_por_ano": {
+      "2016": 29
+    },
+    "gols_por_ano": {
+      "2016": 6
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Felipe Augusto",
+    "total_jogos": 29,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2021": 4,
+      "2022": 4,
+      "2023": 21
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 2
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Mantuan",
+    "total_jogos": 28,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 1,
+      "2018": 27
+    },
+    "gols_por_ano": {
+      "2017": 0,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Matheus Donelli",
+    "total_jogos": 28,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2021": 5,
+      "2022": 5,
+      "2024": 7,
+      "2025": 11
+    },
+    "gols_por_ano": {
+      "2021": 0,
+      "2022": 0,
+      "2024": 0,
+      "2025": 0
+    },
+    "anos_atuou": [
+      2021,
+      2022,
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Petros",
+    "total_jogos": 27,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2015": 27
+    },
+    "gols_por_ano": {
+      "2015": 2
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Willians",
+    "total_jogos": 27,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 27
+    },
+    "gols_por_ano": {
+      "2016": 0
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Paulo Roberto",
+    "total_jogos": 27,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2017": 16,
+      "2018": 11
+    },
+    "gols_por_ano": {
+      "2017": 0,
+      "2018": 1
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Cazares",
+    "total_jogos": 27,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2020": 15,
+      "2021": 12
+    },
+    "gols_por_ano": {
+      "2020": 1,
+      "2021": 1
+    },
+    "anos_atuou": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Murillo",
+    "total_jogos": 27,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2023": 27
+    },
+    "gols_por_ano": {
+      "2023": 0
+    },
+    "anos_atuou": [
+      2023
+    ]
+  },
+  {
+    "nome": "Gabriel Moscardo",
+    "total_jogos": 27,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2023": 25,
+      "2024": 2
+    },
+    "gols_por_ano": {
+      "2023": 1,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Roger",
+    "total_jogos": 26,
+    "total_gols": 5,
+    "jogos_por_ano": {
+      "2018": 25,
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2018": 5,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Carlos Miguel",
+    "total_jogos": 26,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 2,
+      "2023": 9,
+      "2024": 15
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023,
+      2024
+    ]
+  },
+  {
+    "nome": "Kayke",
+    "total_jogos": 26,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 3,
+      "2025": 9,
+      "2026": 14
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 0,
+      "2026": 2
+    },
+    "anos_atuou": [
+      2024,
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Dieguinho",
+    "total_jogos": 26,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2025": 14,
+      "2026": 12
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 1
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Éderson",
+    "total_jogos": 25,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2020": 24,
+      "2021": 1
+    },
+    "gols_por_ano": {
+      "2020": 3,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Léo Príncipe",
+    "total_jogos": 24,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2016": 7,
+      "2017": 16,
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2016": 1,
+      "2017": 0,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Júnior Dutra",
+    "total_jogos": 24,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2018": 24
+    },
+    "gols_por_ano": {
+      "2018": 3
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Héctor Hernández",
+    "total_jogos": 24,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2024": 5,
+      "2025": 19
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 2
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Vilson",
+    "total_jogos": 23,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2016": 20,
+      "2017": 3
+    },
+    "gols_por_ano": {
+      "2016": 1,
+      "2017": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Rildo",
+    "total_jogos": 22,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2015": 13,
+      "2016": 9
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 2
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Douglas",
+    "total_jogos": 22,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 21,
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2018": 1,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Richard",
+    "total_jogos": 22,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 17,
+      "2020": 5
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2020": 0
+    },
+    "anos_atuou": [
+      2019,
+      2020
+    ]
+  },
+  {
+    "nome": "Pedro",
+    "total_jogos": 22,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2023": 22
+    },
+    "gols_por_ano": {
+      "2023": 1
+    },
+    "anos_atuou": [
+      2023
+    ]
+  },
+  {
+    "nome": "Guerrero",
+    "total_jogos": 21,
+    "total_gols": 12,
+    "jogos_por_ano": {
+      "2015": 21
+    },
+    "gols_por_ano": {
+      "2015": 12
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Marciel",
+    "total_jogos": 21,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2015": 5,
+      "2016": 4,
+      "2017": 12
+    },
+    "gols_por_ano": {
+      "2015": 1,
+      "2016": 0,
+      "2017": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Fellipe Bastos",
+    "total_jogos": 21,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 20,
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2017": 0,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Jemerson",
+    "total_jogos": 21,
+    "total_gols": 3,
+    "jogos_por_ano": {
+      "2020": 1,
+      "2021": 20
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2021": 3
+    },
+    "anos_atuou": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Júnior Moraes",
+    "total_jogos": 21,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2022": 17,
+      "2023": 4
+    },
+    "gols_por_ano": {
+      "2022": 1,
+      "2023": 0
+    },
+    "anos_atuou": [
+      2022,
+      2023
+    ]
+  },
+  {
+    "nome": "Léo Jabá",
+    "total_jogos": 20,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2015": 1,
+      "2016": 2,
+      "2017": 17
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 1
+    },
+    "anos_atuou": [
+      2015,
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Gabriel Paulista",
+    "total_jogos": 20,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2026": 20
+    },
+    "gols_por_ano": {
+      "2026": 2
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Matheus Pereira",
+    "total_jogos": 19,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 3,
+      "2026": 16
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2015,
+      2026
+    ]
+  },
+  {
+    "nome": "Lucas Veríssimo",
+    "total_jogos": 18,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2023": 18
+    },
+    "gols_por_ano": {
+      "2023": 1
+    },
+    "anos_atuou": [
+      2023
+    ]
+  },
+  {
+    "nome": "Moisés",
+    "total_jogos": 17,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 2,
+      "2017": 15
+    },
+    "gols_por_ano": {
+      "2016": 0,
+      "2017": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017
+    ]
+  },
+  {
+    "nome": "Caíque França",
+    "total_jogos": 15,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 1,
+      "2017": 6,
+      "2018": 4,
+      "2019": 4
+    },
+    "gols_por_ano": {
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Allan",
+    "total_jogos": 15,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2026": 15
+    },
+    "gols_por_ano": {
+      "2026": 0
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Clayton",
+    "total_jogos": 14,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2017": 14
+    },
+    "gols_por_ano": {
+      "2017": 2
+    },
+    "anos_atuou": [
+      2017
+    ]
+  },
+  {
+    "nome": "Thiaguinho",
+    "total_jogos": 14,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 11,
+      "2019": 3
+    },
+    "gols_por_ano": {
+      "2018": 0,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Cauê",
+    "total_jogos": 14,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2021": 14
+    },
+    "gols_por_ano": {
+      "2021": 2
+    },
+    "anos_atuou": [
+      2021
+    ]
+  },
+  {
+    "nome": "Renê Júnior",
+    "total_jogos": 13,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 12,
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2018": 1,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Bruno Melo",
+    "total_jogos": 13,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 13
+    },
+    "gols_por_ano": {
+      "2022": 0
+    },
+    "anos_atuou": [
+      2022
+    ]
+  },
+  {
+    "nome": "Robert Renan",
+    "total_jogos": 13,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 13
+    },
+    "gols_por_ano": {
+      "2022": 0
+    },
+    "anos_atuou": [
+      2022
+    ]
+  },
+  {
+    "nome": "Alan Mineiro",
+    "total_jogos": 12,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2016": 12
+    },
+    "gols_por_ano": {
+      "2016": 2
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Matheus Jesus",
+    "total_jogos": 12,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 12
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Robson Bambu",
+    "total_jogos": 12,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 12
+    },
+    "gols_por_ano": {
+      "2022": 0
+    },
+    "anos_atuou": [
+      2022
+    ]
+  },
+  {
+    "nome": "Juninho Capixaba",
+    "total_jogos": 11,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 11
+    },
+    "gols_por_ano": {
+      "2018": 0
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Marquinhos",
+    "total_jogos": 11,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 1,
+      "2021": 10
+    },
+    "gols_por_ano": {
+      "2019": 0,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2019,
+      2021
+    ]
+  },
+  {
+    "nome": "Régis",
+    "total_jogos": 10,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2019": 10
+    },
+    "gols_por_ano": {
+      "2019": 2
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Rodrigo Varanda",
+    "total_jogos": 10,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2021": 10
+    },
+    "gols_por_ano": {
+      "2021": 1
+    },
+    "anos_atuou": [
+      2021
+    ]
+  },
+  {
+    "nome": "Jonathas",
+    "total_jogos": 9,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 9
+    },
+    "gols_por_ano": {
+      "2018": 1
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Jesse Lingard",
+    "total_jogos": 9,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2026": 9
+    },
+    "gols_por_ano": {
+      "2026": 2
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Matheus Davó",
+    "total_jogos": 8,
+    "total_gols": 2,
+    "jogos_por_ano": {
+      "2020": 8
+    },
+    "gols_por_ano": {
+      "2020": 2
+    },
+    "anos_atuou": [
+      2020
+    ]
+  },
+  {
+    "nome": "Felipe Longo",
+    "total_jogos": 7,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 6,
+      "2026": 1
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Zakaria Labyad",
+    "total_jogos": 7,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2026": 7
+    },
+    "gols_por_ano": {
+      "2026": 0
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Kaio César",
+    "total_jogos": 6,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2026": 6
+    },
+    "gols_por_ano": {
+      "2026": 0
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Pedro Milans",
+    "total_jogos": 6,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2026": 6
+    },
+    "gols_por_ano": {
+      "2026": 0
+    },
+    "anos_atuou": [
+      2026
+    ]
+  },
+  {
+    "nome": "Rodrigo Figueiredo",
+    "total_jogos": 5,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 2,
+      "2018": 3
+    },
+    "gols_por_ano": {
+      "2017": 0,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "André Luis",
+    "total_jogos": 5,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 5
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Madson",
+    "total_jogos": 5,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2020": 5
+    },
+    "gols_por_ano": {
+      "2020": 0
+    },
+    "anos_atuou": [
+      2020
+    ]
+  },
+  {
+    "nome": "Arthur Sousa",
+    "total_jogos": 5,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2022": 1,
+      "2024": 4
+    },
+    "gols_por_ano": {
+      "2022": 0,
+      "2024": 1
+    },
+    "anos_atuou": [
+      2022,
+      2024
+    ]
+  },
+  {
+    "nome": "Chrystian Barletta",
+    "total_jogos": 5,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2023": 5
+    },
+    "gols_por_ano": {
+      "2023": 0
+    },
+    "anos_atuou": [
+      2023
+    ]
+  },
+  {
+    "nome": "Matheus Vidotto",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 1,
+      "2016": 3
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Matheus Matias",
+    "total_jogos": 4,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2018": 4
+    },
+    "gols_por_ano": {
+      "2018": 1
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Guilherme Romão",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 4
+    },
+    "gols_por_ano": {
+      "2018": 0
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Sergio Díaz",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 2,
+      "2019": 2
+    },
+    "gols_por_ano": {
+      "2018": 0,
+      "2019": 0
+    },
+    "anos_atuou": [
+      2018,
+      2019
+    ]
+  },
+  {
+    "nome": "Yony González",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2020": 4
+    },
+    "gols_por_ano": {
+      "2020": 0
+    },
+    "anos_atuou": [
+      2020
+    ]
+  },
+  {
+    "nome": "Diego Palacios",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2024": 1,
+      "2025": 3
+    },
+    "gols_por_ano": {
+      "2024": 0,
+      "2025": 0
+    },
+    "anos_atuou": [
+      2024,
+      2025
+    ]
+  },
+  {
+    "nome": "Bahia",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 3,
+      "2026": 1
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Kauê",
+    "total_jogos": 4,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 1,
+      "2026": 3
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Lincom",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 3
+    },
+    "gols_por_ano": {
+      "2015": 0
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Lodeiro",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 3
+    },
+    "gols_por_ano": {
+      "2015": 0
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Jonathan Cafu",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2020": 2,
+      "2021": 1
+    },
+    "gols_por_ano": {
+      "2020": 0,
+      "2021": 0
+    },
+    "anos_atuou": [
+      2020,
+      2021
+    ]
+  },
+  {
+    "nome": "Luis Mandaca",
+    "total_jogos": 3,
+    "total_gols": 1,
+    "jogos_por_ano": {
+      "2021": 3
+    },
+    "gols_por_ano": {
+      "2021": 1
+    },
+    "anos_atuou": [
+      2021
+    ]
+  },
+  {
+    "nome": "Antony",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2021": 3
+    },
+    "gols_por_ano": {
+      "2021": 0
+    },
+    "anos_atuou": [
+      2021
+    ]
+  },
+  {
+    "nome": "Ivan",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2022": 3
+    },
+    "gols_por_ano": {
+      "2022": 0
+    },
+    "anos_atuou": [
+      2022
+    ]
+  },
+  {
+    "nome": "João Vitor",
+    "total_jogos": 3,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 2,
+      "2026": 1
+    },
+    "gols_por_ano": {
+      "2025": 0,
+      "2026": 0
+    },
+    "anos_atuou": [
+      2025,
+      2026
+    ]
+  },
+  {
+    "nome": "Rodrigo Sam",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 2
+    },
+    "gols_por_ano": {
+      "2015": 0
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Gustavo Viera",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 1,
+      "2016": 1
+    },
+    "gols_por_ano": {
+      "2015": 0,
+      "2016": 0
+    },
+    "anos_atuou": [
+      2015,
+      2016
+    ]
+  },
+  {
+    "nome": "Jean",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 2
+    },
+    "gols_por_ano": {
+      "2016": 0
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Carlinhos",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 1,
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2017": 0,
+      "2018": 0
+    },
+    "anos_atuou": [
+      2017,
+      2018
+    ]
+  },
+  {
+    "nome": "Warian",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 2
+    },
+    "gols_por_ano": {
+      "2018": 0
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Daniel Marcos",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 2
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "João Celeri",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 2
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Luiz Eduardo",
+    "total_jogos": 2,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2025": 2
+    },
+    "gols_por_ano": {
+      "2025": 0
+    },
+    "anos_atuou": [
+      2025
+    ]
+  },
+  {
+    "nome": "Matheus Vargas",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 1
+    },
+    "gols_por_ano": {
+      "2015": 0
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Samuel",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2015": 1
+    },
+    "gols_por_ano": {
+      "2015": 0
+    },
+    "anos_atuou": [
+      2015
+    ]
+  },
+  {
+    "nome": "Claudinho",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 1
+    },
+    "gols_por_ano": {
+      "2016": 0
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Douglas Friedrich",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2016": 1
+    },
+    "gols_por_ano": {
+      "2016": 0
+    },
+    "anos_atuou": [
+      2016
+    ]
+  },
+  {
+    "nome": "Bruno Paulo",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 1
+    },
+    "gols_por_ano": {
+      "2017": 0
+    },
+    "anos_atuou": [
+      2017
+    ]
+  },
+  {
+    "nome": "Moises",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2017": 1
+    },
+    "gols_por_ano": {
+      "2017": 0
+    },
+    "anos_atuou": [
+      2017
+    ]
+  },
+  {
+    "nome": "Bruno Xavier",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2018": 0
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Rafael Bilu",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2018": 1
+    },
+    "gols_por_ano": {
+      "2018": 0
+    },
+    "anos_atuou": [
+      2018
+    ]
+  },
+  {
+    "nome": "Fabricio Oya",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Igor Morais",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  },
+  {
+    "nome": "Lucas Belezi",
+    "total_jogos": 1,
+    "total_gols": 0,
+    "jogos_por_ano": {
+      "2019": 1
+    },
+    "gols_por_ano": {
+      "2019": 0
+    },
+    "anos_atuou": [
+      2019
+    ]
+  }
+]
