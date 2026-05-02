@@ -20,7 +20,20 @@ interface Jogador {
 }
 
 export default function Home() {
-  const [jogadores, setJogadores] = useState<Jogador[]>(jogadoresData);
+  // Carregar dados do localStorage ou usar dados padrão
+  const [jogadores, setJogadores] = useState<Jogador[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('corinthians_jogadores');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch (e) {
+          console.error('Erro ao carregar dados do localStorage:', e);
+        }
+      }
+    }
+    return jogadoresData;
+  });
   const [filtrados, setFiltrados] = useState<Jogador[]>(jogadoresData);
   const [searchTerm, setSearchTerm] = useState("");
   const [filterAno, setFilterAno] = useState("");
@@ -35,6 +48,13 @@ export default function Home() {
   const [editValue, setEditValue] = useState("");
   const [showAddModal, setShowAddModal] = useState(false);
   const [newJogador, setNewJogador] = useState({ nome: "", total_jogos: 0, total_gols: 0 });
+
+  // Salvar dados no localStorage sempre que jogadores mudar
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('corinthians_jogadores', JSON.stringify(jogadores));
+    }
+  }, [jogadores]);
 
   // Aplicar filtros
   useEffect(() => {
