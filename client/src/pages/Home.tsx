@@ -28,7 +28,8 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(50);
   const [selectedJogador, setSelectedJogador] = useState<Jogador | null>(null);
-  const [editMode, setEditMode] = useState(false);
+  const [editingCell, setEditingCell] = useState<{ nome: string; field: 'total_jogos' | 'total_gols' } | null>(null);
+  const [editValue, setEditValue] = useState("");
 
   // Aplicar filtros
   useEffect(() => {
@@ -127,6 +128,36 @@ export default function Home() {
     link.href = URL.createObjectURL(blob);
     link.download = "corinthians_jogadores_2015_2026.csv";
     link.click();
+  };
+
+  const handleCellEdit = (jogadorNome: string, field: 'total_jogos' | 'total_gols', value: string) => {
+    setEditingCell({ nome: jogadorNome, field });
+    setEditValue(value);
+  };
+
+  const handleSaveEdit = (jogadorNome: string) => {
+    if (!editingCell || editValue === "") return;
+    
+    const newValue = parseInt(editValue) || 0;
+    const updatedJogadores = jogadores.map(j => {
+      if (j.nome === jogadorNome) {
+        if (editingCell.field === 'total_jogos') {
+          return { ...j, total_jogos: newValue };
+        } else if (editingCell.field === 'total_gols') {
+          return { ...j, total_gols: newValue };
+        }
+      }
+      return j;
+    });
+    
+    setJogadores(updatedJogadores);
+    setEditingCell(null);
+    setEditValue("");
+  };
+
+  const handleCancelEdit = () => {
+    setEditingCell(null);
+    setEditValue("");
   };
 
   return (
@@ -303,8 +334,46 @@ export default function Home() {
                     <tr key={jogador.nome} className={`border-b border-slate-800 hover:bg-slate-800/50 transition ${rowClass}`}>
                       <td className="px-4 py-3 font-bold text-slate-400">{rank}</td>
                       <td className="px-4 py-3 font-semibold text-slate-100">{jogador.nome}</td>
-                      <td className="px-4 py-3 text-center font-bold text-amber-400">{jogador.total_jogos}</td>
-                      <td className="px-4 py-3 text-center font-bold text-red-400">{jogador.total_gols}</td>
+                      <td className="px-4 py-3 text-center font-bold text-amber-400 cursor-pointer hover:bg-slate-700/50 rounded transition" onClick={() => handleCellEdit(jogador.nome, 'total_jogos', String(jogador.total_jogos))}>
+                        {editingCell?.nome === jogador.nome && editingCell?.field === 'total_jogos' ? (
+                          <div className="flex items-center justify-center gap-2">
+                            <input
+                              type="number"
+                              value={editValue}
+                              onChange={(e) => setEditValue(e.target.value)}
+                              className="w-16 px-2 py-1 bg-slate-800 border border-amber-400 rounded text-amber-400 text-center"
+                              autoFocus
+                              onBlur={() => handleSaveEdit(jogador.nome)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter') handleSaveEdit(jogador.nome);
+                                if (e.key === 'Escape') handleCancelEdit();
+                              }}
+                            />
+                          </div>
+                        ) : (
+                          jogador.total_jogos
+                        )}
+                      </td>
+                      <td className="px-4 py-3 text-center font-bold text-red-400 cursor-pointer hover:bg-slate-700/50 rounded transition" onClick={() => handleCellEdit(jogador.nome, 'total_gols', String(jogador.total_gols))}>
+                        {editingCell?.nome === jogador.nome && editingCell?.field === 'total_gols' ? (
+                          <div className="flex items-center justify-center gap-2">
+                            <input
+                              type="number"
+                              value={editValue}
+                              onChange={(e) => setEditValue(e.target.value)}
+                              className="w-16 px-2 py-1 bg-slate-800 border border-red-400 rounded text-red-400 text-center"
+                              autoFocus
+                              onBlur={() => handleSaveEdit(jogador.nome)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter') handleSaveEdit(jogador.nome);
+                                if (e.key === 'Escape') handleCancelEdit();
+                              }}
+                            />
+                          </div>
+                        ) : (
+                          jogador.total_gols
+                        )}
+                      </td>
                       <td className="px-4 py-3 text-center font-bold text-cyan-400">{media}</td>
                       <td className="px-4 py-3 text-center text-slate-300">{jogador.anos_atuou.length}</td>
                       <td className="px-4 py-3 text-xs text-slate-400">
@@ -348,13 +417,47 @@ export default function Home() {
           {selectedJogador && (
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
-                <Card className="bg-slate-800/50 border-slate-700 p-4 text-center">
-                  <div className="text-2xl font-black text-amber-400">{selectedJogador.total_jogos}</div>
-                  <div className="text-xs text-slate-400 uppercase mt-2">Total de Jogos</div>
+                  <Card className="bg-slate-800/50 border-slate-700 p-4 text-center cursor-pointer hover:border-amber-400 transition" onClick={() => handleCellEdit(selectedJogador.nome, 'total_jogos', String(selectedJogador.total_jogos))}>
+                  {editingCell?.nome === selectedJogador.nome && editingCell?.field === 'total_jogos' ? (
+                    <input
+                      type="number"
+                      value={editValue}
+                      onChange={(e) => setEditValue(e.target.value)}
+                      className="w-full px-2 py-1 bg-slate-900 border border-amber-400 rounded text-amber-400 text-center text-2xl font-black"
+                      autoFocus
+                      onBlur={() => handleSaveEdit(selectedJogador.nome)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') handleSaveEdit(selectedJogador.nome);
+                        if (e.key === 'Escape') handleCancelEdit();
+                      }}
+                    />
+                  ) : (
+                    <>
+                      <div className="text-2xl font-black text-amber-400">{selectedJogador.total_jogos}</div>
+                      <div className="text-xs text-slate-400 uppercase mt-2">Total de Jogos (clique para editar)</div>
+                    </>
+                  )}
                 </Card>
-                <Card className="bg-slate-800/50 border-slate-700 p-4 text-center">
-                  <div className="text-2xl font-black text-red-400">{selectedJogador.total_gols}</div>
-                  <div className="text-xs text-slate-400 uppercase mt-2">Total de Gols</div>
+                <Card className="bg-slate-800/50 border-slate-700 p-4 text-center cursor-pointer hover:border-red-400 transition" onClick={() => handleCellEdit(selectedJogador.nome, 'total_gols', String(selectedJogador.total_gols))}>
+                  {editingCell?.nome === selectedJogador.nome && editingCell?.field === 'total_gols' ? (
+                    <input
+                      type="number"
+                      value={editValue}
+                      onChange={(e) => setEditValue(e.target.value)}
+                      className="w-full px-2 py-1 bg-slate-900 border border-red-400 rounded text-red-400 text-center text-2xl font-black"
+                      autoFocus
+                      onBlur={() => handleSaveEdit(selectedJogador.nome)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') handleSaveEdit(selectedJogador.nome);
+                        if (e.key === 'Escape') handleCancelEdit();
+                      }}
+                    />
+                  ) : (
+                    <>
+                      <div className="text-2xl font-black text-red-400">{selectedJogador.total_gols}</div>
+                      <div className="text-xs text-slate-400 uppercase mt-2">Total de Gols (clique para editar)</div>
+                    </>
+                  )}
                 </Card>
                 <Card className="bg-slate-800/50 border-slate-700 p-4 text-center">
                   <div className="text-2xl font-black text-cyan-400">{selectedJogador.anos_atuou.length}</div>
@@ -362,7 +465,7 @@ export default function Home() {
                 </Card>
                 <Card className="bg-slate-800/50 border-slate-700 p-4 text-center">
                   <div className="text-2xl font-black text-amber-400">{selectedJogador.total_jogos > 0 ? (selectedJogador.total_gols / selectedJogador.total_jogos).toFixed(2) : "0.00"}</div>
-                  <div className="text-xs text-slate-400 uppercase mt-2">Média Gols/Jogo</div>
+                  <div className="text-xs text-slate-400 uppercase mt-2">Média Gols/Jogo (automática)</div>
                 </Card>
               </div>
 
